@@ -1,0 +1,85 @@
+{
+  "name": "bad-apple-player",
+  "displayName": "Bad Apple!! in VS Code",
+  "description": "Play Bad Apple!! within VS Code!",
+  "version": "0.0.1",
+  "publisher": "PotatoK",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bad-apple-player.play",
+        "title": "Bad Apple!!: Play"
+      },
+      {
+        "command": "bad-apple-player.pad",
+        "title": "Bad Apple!!: Pad"
+      },
+      {
+        "command": "bad-apple-player.kill",
+        "title": "Bad Apple!!: Kill"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Bad Apple!!",
+        "order": 0,
+        "properties": {
+          "bad-apple-player.targetFrames": {
+            "order": 0,
+            "default": 15,
+            "type": "integer",
+            "description": "Target FPS to display Bad Apple!!",
+            "minimum": 1,
+            "maximum": 30
+          },
+          "bad-apple-player.opacity": {
+            "order": 1,
+            "default": 1,
+            "type": "number",
+            "description": "Opacity of Bad Apple!!",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "bad-apple-player.textOpacity": {
+            "order": 2,
+            "default": 1,
+            "type": "number",
+            "description": "Opacity of text when running Bad Apple!!",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "bad-apple-player.switchEditor": {
+            "order": 3,
+            "default": false,
+            "type": "boolean",
+            "description": "Whether to switch to the current active editor."
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.81.0",
+    "@types/node": "20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "typescript": "^5.1.3"
+  }
+}
