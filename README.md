@@ -8,7 +8,7 @@ NOTE: For best results, use monospace.
 
 You can even set opacity of the text and opacity of Bad Apple!!
 
-![Screenshot](./images/screenshot.png)
+![Screenshot](images/screenshot.png)
 Theme: [Bearded Theme HC Ebony](https://github.com/BeardedBear/bearded-theme)
 
 ## Extension Settings
