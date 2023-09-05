@@ -4,12 +4,15 @@ Want Bad Apple!! in VS Code? No? Here it is anyway...
 
 NOTE: For best results, use monospace.
 
-## Features
-
-You can even set opacity of the text and opacity of Bad Apple!!
+## About
 
 ![Screenshot](images/screenshot.png)
 Theme: [Bearded Theme HC Ebony](https://github.com/BeardedBear/bearded-theme)
+
+This extension comes with these commands accessible by the command palette (default is `Ctrl+Shift+P`):
+* `Bad Apple!!: Play` - Play Bad Apple!! in your active text editor.
+* `Bad Apple!!: Pad` - Pads text so Bad Apple!! can be watched in full.
+* `Bad Apple!!: Kill` - Stops all Bad Apple!! instances.
 
 ## Extension Settings
 

@@ -2,7 +2,7 @@
   "name": "bad-apple-player",
   "displayName": "Bad Apple!! in VS Code",
   "description": "Play Bad Apple!! within VS Code!",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "PotatoK123",
   "icon": "images/icon.png",
   "author": {
