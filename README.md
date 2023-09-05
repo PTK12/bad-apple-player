@@ -29,12 +29,6 @@ Currently, this extension is unable to resize for different dimensions.
 
 This extension also works poorly without a monospace font.
 
-## Release Notes
-
-### 0.0.1
-
-Initial release of Bad Apple!! in VS Code.
-
 ---
 
 **Enjoy!**
