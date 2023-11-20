@@ -1,4 +1,4 @@
-# Bad Apple!! in VS Code
+# Bad Apple!! player
 
 Want Bad Apple!! in VS Code? No? Here it is anyway...
 
