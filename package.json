@@ -3,21 +3,21 @@
   "displayName": "Bad Apple!! in VS Code",
   "description": "Play Bad Apple!! within VS Code!",
   "version": "0.0.2",
-  "publisher": "PotatoK123",
+  "publisher": "PTK",
   "icon": "images/icon.png",
   "author": {
-    "name": "PotatoK",
-    "url": "https://github.com/PotatoK123"
+    "name": "PTK",
+    "url": "https://github.com/PTK12"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PotatoK123/bad-apple-player/issues"
+    "url": "https://github.com/PTK12/bad-apple-player/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PotatoK123/bad-apple-player.git"
+    "url": "https://github.com/PTK12/bad-apple-player.git"
   },
-  "homepage": "https://github.com/PotatoK123/bad-apple-player",
+  "homepage": "https://github.com/PTK12/bad-apple-player",
   "engines": {
     "vscode": "^1.81.0"
   },
