@@ -2,8 +2,8 @@ import * as vscode from "vscode";
 const data: {[key: string]: any} = require("./../data.json");
 
 function generateDecorations(): [vscode.TextEditorDecorationType, vscode.TextEditorDecorationType] {
-	let opacity = vscode.workspace.getConfiguration("bad-apple-player").get("opacity", 1);
-	let textOpacity = vscode.workspace.getConfiguration("bad-apple-player").get("textOpacity", 1);
+	let opacity = vscode.workspace.getConfiguration("bad-apple-vscode-player").get("opacity", 1);
+	let textOpacity = vscode.workspace.getConfiguration("bad-apple-vscode-player").get("textOpacity", 1);
 
 	let dark = vscode.window.createTextEditorDecorationType({backgroundColor: `rgba(0, 0, 0, ${opacity})`, opacity: `${textOpacity}`});
 	let light = vscode.window.createTextEditorDecorationType({backgroundColor: `rgba(255, 255, 255, ${opacity})`, opacity: `${textOpacity}`});
@@ -37,7 +37,7 @@ async function frameSync(fps: number) {
 let killSignal = false;
 
 export function activate(context: vscode.ExtensionContext) {
-	let pad = vscode.commands.registerTextEditorCommand("bad-apple-player.pad", async function () {
+	let pad = vscode.commands.registerTextEditorCommand("bad-apple-vscode-player.pad", async function () {
 		let editor = vscode.window.activeTextEditor;
 		if (editor === undefined) {return;}
 
@@ -59,10 +59,10 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(pad);
 
-	let play = vscode.commands.registerCommand("bad-apple-player.play", async function () {
+	let play = vscode.commands.registerCommand("bad-apple-vscode-player.play", async function () {
 		killSignal = false;
-		let fps = vscode.workspace.getConfiguration("bad-apple-player").get("targetFrames", 15);
-		let switchEditor = vscode.workspace.getConfiguration("bad-apple-player").get("switchEditor", false);
+		let fps = vscode.workspace.getConfiguration("bad-apple-vscode-player").get("targetFrames", 15);
+		let switchEditor = vscode.workspace.getConfiguration("bad-apple-vscode-player").get("switchEditor", false);
 		let decorations = generateDecorations();
 		let editor = vscode.window.activeTextEditor;
 
@@ -100,7 +100,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(play);
 
-	let kill = vscode.commands.registerCommand("bad-apple-player.kill", async function () {
+	let kill = vscode.commands.registerCommand("bad-apple-vscode-player.kill", async function () {
 		killSignal = true;
 	});
 

@@ -18,10 +18,10 @@ This extension comes with these commands accessible by the command palette (defa
 
 This extension contributes the following settings:
 
-* `bad-apple-player.targetFrames`: Target FPS to display Bad Apple!!
-* `bad-apple-player.opacity`: Opacity of Bad Apple!!
-* `bad-apple-player.textOpacity`: Opacity of text when running Bad Apple!!
-* `bad-apple-player.switchEditor`: Whether to switch to the current active editor.
+* `bad-apple-vscode-player.targetFrames`: Target FPS to display Bad Apple!!
+* `bad-apple-vscode-player.opacity`: Opacity of Bad Apple!!
+* `bad-apple-vscode-player.textOpacity`: Opacity of text when running Bad Apple!!
+* `bad-apple-vscode-player.switchEditor`: Whether to switch to the current active editor.
 
 ## Known Issues
 

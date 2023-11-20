@@ -1,9 +1,9 @@
 {
-  "name": "bad-apple-player",
+  "name": "bad-apple-vscode-player",
   "displayName": "Bad Apple!! in VS Code",
   "description": "Play Bad Apple!! within VS Code!",
   "version": "0.0.2",
-  "publisher": "PTK",
+  "publisher": "PTK12",
   "icon": "images/icon.png",
   "author": {
     "name": "PTK",
@@ -11,13 +11,13 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PTK12/bad-apple-player/issues"
+    "url": "https://github.com/PTK12/bad-apple-vscode-player/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PTK12/bad-apple-player.git"
+    "url": "https://github.com/PTK12/bad-apple-vscode-player.git"
   },
-  "homepage": "https://github.com/PTK12/bad-apple-player",
+  "homepage": "https://github.com/PTK12/bad-apple-vscode-player",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -29,15 +29,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "bad-apple-player.play",
+        "command": "bad-apple-vscode-player.play",
         "title": "Bad Apple!!: Play"
       },
       {
-        "command": "bad-apple-player.pad",
+        "command": "bad-apple-vscode-player.pad",
         "title": "Bad Apple!!: Pad"
       },
       {
-        "command": "bad-apple-player.kill",
+        "command": "bad-apple-vscode-player.kill",
         "title": "Bad Apple!!: Kill"
       }
     ],
@@ -46,7 +46,7 @@
         "title": "Bad Apple!!",
         "order": 0,
         "properties": {
-          "bad-apple-player.targetFrames": {
+          "bad-apple-vscode-player.targetFrames": {
             "order": 0,
             "default": 15,
             "type": "integer",
@@ -54,7 +54,7 @@
             "minimum": 1,
             "maximum": 30
           },
-          "bad-apple-player.opacity": {
+          "bad-apple-vscode-player.opacity": {
             "order": 1,
             "default": 1,
             "type": "number",
@@ -62,7 +62,7 @@
             "minimum": 0,
             "maximum": 1
           },
-          "bad-apple-player.textOpacity": {
+          "bad-apple-vscode-player.textOpacity": {
             "order": 2,
             "default": 1,
             "type": "number",
@@ -70,7 +70,7 @@
             "minimum": 0,
             "maximum": 1
           },
-          "bad-apple-player.switchEditor": {
+          "bad-apple-vscode-player.switchEditor": {
             "order": 3,
             "default": false,
             "type": "boolean",
